@@ -1,0 +1,33 @@
+ /*
+body{
+   background-color: white;
+   font-family: arial;
+}
+.container header{
+  background-color: pink;
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  }
+  .container section{
+  text-align: center;
+  padding: 50px;
+  background-color: #c7f8ff;
+  }
+.form-table {
+  width: 500px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border:1px solid silver;
+  border-radius: 20px;
+  background-color: #941212;
+  font-size: 14px;
+}
+.form-table th,
+.form-table td {
+
+}
+.form-table th {
+  text-align: left;
+} */

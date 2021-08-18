@@ -1,0 +1,93 @@
+
+  *{
+   padding: 0;
+   margin: 0;
+}
+body{
+   background: url(CEGnight.jpg) no-repeat;
+   background-size: cover;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   font-family: sans-serif;
+}
+.container{
+   position: relative;
+   margin-top: 100px;
+   width: 450px;
+   height: 460px;
+   background:#ffe6e6;
+}
+.label{
+   padding: 20px 125px;
+   font-size: 27px;
+   font-weight: bold;
+   color: #ffeded;
+   background-color:#941212;
+   border-bottom: 4px solid #4d0d0d;
+}
+.login_form{
+   padding: 20px 40px;
+}
+.login_form .font{
+   font-size: 18px;
+   color: #4d0d0d;
+   margin: 3px 0;
+}
+.login_form input{
+   height: 40px;
+   width: 350px;
+   padding: 0 5px;
+   font-size: 18px;
+   outline: none;
+   border: 1px solid #dedede ;
+}
+.login_form .font2{
+   margin-top: 30px;
+}
+.login_form button{
+   margin: 45px 0 30px 0;
+   height: 57px;
+   width: 365px;
+   font-size: 22px;
+   color: white;
+   outline: none;
+   cursor: pointer;
+   font-weight: bold;
+   background: #941212;
+   border-radius: 5px;
+   border: 2px solid #4d0d0d;
+   transition: .5s;
+}
+.login_form button:hover{
+   background: #4d0d0d;
+}
+.cont i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+.container a{
+  height: 10%;
+  width: 81.5%;
+  position: absolute;
+  left: 38.5px;
+  bottom: 18px;
+  background:#941212;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border: 2px solid #4d0d0d;
+  font-size: 22px;
+  font-weight: bold;
+  transition: .5s;
+  outline: none;
+  cursor: pointer;
+  margin-top: -20px;
+}
+.container a:hover{
+   background: #4d0d0d;
+}
+.logn {
+  color:#941212;
+}

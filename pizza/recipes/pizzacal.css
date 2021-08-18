@@ -1,0 +1,68 @@
+.parent{
+            width: 350px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .heading{
+            text-align: center;
+            border: #04164a 2px solid;
+            background-color: #d4daff;
+            font-weight: bold;
+
+        }
+        .child-1{
+            border-left: #04164a 2px solid;
+            border-right: #04164a 2px solid;
+            background-color: #d4daff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height:100px;
+       }
+       .size{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+       }
+       .size button{
+           background-color: #163eb5;
+           color:#e8e9ff;
+           border: #04164a 2px solid;
+       }
+
+         .inner-child-1 div{
+            background-color: #bfc8ff;
+            border:#04164a  2px solid;
+            width: 60%;
+
+         }
+
+         .child-2{
+            height:120px;
+            border: #04164a 2px solid;
+              background-color: #d4daff;
+            display: flex;
+            flex-direction: column;
+         }
+         .inner-child-2{
+             padding: 30px;
+             display: flex;
+             flex-direction: row;
+             justify-content: space-around;
+         }
+         #pizza-count{
+            width:30px;
+            background-color:#163eb5;
+            color:#e8e9ff;
+        }
+        #calculate{
+            background-color: goldenrod;
+            border: #04164a 2px solid;
+        }
+        .bill{
+          border: #04164a 2px solid;
+          background-color: #d4daff;
+        }

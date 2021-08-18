@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, Helvetica, sans-seif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #ffeded;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  background: #941212;
+  color: #ffeded;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #4d0d0d 5px solid;
+}
+header a {
+  color: #ffeded;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+}
+header li {
+  float: left;
+  padding: 0 20px 0 20px;
+  display: inline;
+}
+header #brand {
+  float: left;
+}
+header #brand h1 {
+  margin: 0;
+}
+header nav {
+  float: right;
+  margin-top: 117.5px;
+}
+header a:hover {
+  color: #e66c6c;
+  font-weight: bold;
+}
+header .highlight, header .current a{
+  color: #4d0d0d;
+  font-weight: bold;
+}
+.body-container {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#boxes{
+  margin-top:20px;
+}
+#boxes .box{
+  float:left;
+  text-align:center;
+  width:30%;
+  padding:10px;
+}
+#forms{
+  padding:25px;
+  color:#ffeded;
+  background-color:#4d0d0d;
+  border-bottom: : 3px solid #ffeded;
+}
+#forms h1{
+  padding-left:170px;
+  float:left;
+  color:#ffeded;
+}
+#forms form{
+  float:right;
+  margin-top:20px;
+  padding-right:100px;
+}
+#forms input[type="text"]{
+  padding: 4px;
+  height:35px;
+  width:400px;
+}
+.button_1{
+  height: 35px;
+  background:#941212;
+  color:#ffeded;
+  padding-left: 30px;
+  padding-right: 30px;
+  border:0;
+}
+.box p{
+  color:#ffffff;
+  font-size: 18px;
+}
+#departments h3{
+  padding:15px;
+  font-size: 24px;
+  background-color:#941212;
+  color:#ffeded;
+  padding-left:170px;
+  border-bottom: #4d0d0d 5px solid;
+  text-transform:uppercase;
+}
+#departments img{
+  border: 5px solid #4d0d0d;
+  background-color:  #4d0d0d;
+  padding-right: 830px;
+  padding-left:170px;
+}
+#departments p{
+  background-color: #4d0d0d;
+  margin-top:-6px;
+  color:#ff9191;
+  font-size: 18px;
+  padding-left: 170px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.column img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container1 {
+  position: relative;
+  display: none;
+}
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+*{
+  box-sizing: border-box;
+}
+#form1{
+  padding: 30px;
+  background: #941212;
+  color: #ffeded;
+  font-size: 30px;
+  margin-top: -5px;
+  text-align: center;
+  border-bottom: 5px solid #4d0d0d;
+}
+#form2{
+  padding: 20px;
+  background-color: #4d0d0d;
+  color:#ffeded;
+  text-align: center;
+  margin-top:-20px;
+}
+.container3{
+	background-color: #ffcfcf;
+  padding: 20px;
+  margin-top: -24px;
+}
+.std h3{
+  background-color:#fffafa;
+  padding:20px;
+  color:#941212;
+  font-size: 26px;
+  padding-left: 40px;
+  text-align: center;
+}
+.std p{
+  background-color: #941212;
+  color:#ffd9d9;
+  margin-top: -26px;
+  padding-left: 30px;
+  padding-right: 20px;
+  font-size: 17px;
+  border-bottom: 5px solid #4d0d0d;
+  border-top: 5px solid #4d0d0d;
+}
+#link1{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: -16px;
+  padding: 18px;
+  background-color: #4d0d0d;
+  color:#ffeded;
+  text-align: center;
+}
+#link1 a{
+  text-decoration: none;
+  height: 50px;
+  background:#941212;
+  color:#ffeded;
+  padding-left: 63px;
+  padding-right:63px;
+  border:0;
+}
+#link2{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 22px;
+  background-color:#04164a;
+  color:#e8e9ff;
+  text-align: center;
+}
+#link2 a{
+text-decoration: none;
+height: 50px;
+background:#163eb5;
+color:#e8e9ff;
+padding-left: 30px;
+padding-right: 30px;
+border:0;
+}
+#showcase{
+  min-height: 500px;
+  background: url("CEGnight.jpg") no-repeat;
+  background-size: cover;
+  text-align:center;
+  color:#fffafa;
+  padding-left: 550px;
+}
+#showcase h1{
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+#showcase p{
+  font-size: 18px;
+}

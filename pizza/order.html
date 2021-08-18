@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Corner | Orders</title>
+    <link rel="stylesheet" href="csss.css">
+    <link rel="shortcut icon" href="pizza-logo.ico">
+    <link rel="stylesheet" href="recipes\pizzacal.css">
+        <meta charset ="UTF-8"/>
+		    <meta name ="keywords" content="html, css, js"/>
+		    <meta name ="author" content="YOGESH V, 2020115107" />
+		    <meta name ="robots" content="index,follow"/>
+        <meta http-equiv ="refresh" content="60"/>
+        <meta name ="language" content="EN_US"/>
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+              <header>
+                <div class="container">
+                        <div id="brand">
+                                <img src="pizza-logo.jpg" alt="logo" height="100" width="100">
+                                <h1>PIZZA CORNER</h1>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="http://localhost/project/pizza/indeex.html">Home</a></li>
+                                <li><a href="http://localhost/project/pizza/pizza.html">Pizza</a></li>
+                                <li><a href="http://localhost/project/pizza/deals.html">Deals</a></li>
+                                <li><a href="http://localhost/project/pizza/order.html"><span class="highlight">Order</span></a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </header>
+
+            <br><br><br>
+            <div class=parent>
+        <div class="heading">Pizza Corner - Order Chart</div>
+        <div class="child-1">
+            <div class="inner-child-1">
+                <center><div id="prize">Pizza Price</div></center>
+            </div>
+            <div class="size">
+                <div>Select Pizza Size</div>
+                <button onclick="setSize('S')">Small</button>
+                <button onclick="setSize('M')">Medium</button>
+                <button onclick="setSize('L')">Large</button>
+            </div>
+        </div>
+        <div class="child-2">
+            <div class="inner-child-2">
+                    <div class="Quantity">Enter the number of Pizza:</div>
+                    <input id="pizza-count" type="number" max="20" min = "1">
+            </div>
+            <center><button onclick="calcBill();" id="calculate">Calculate</button></center>
+        </div>
+        <br>
+        <br>
+
+        <div class=bill>
+          <div id="quantity"></div>
+          <div id="per-prize"></div>
+          <div id="pre-prize"></div>
+          <div id="tax-amt"></div>
+          <div id="del-charge"></div>
+          <div id="total"></div>
+        </div>
+
+    </div>
+    <script>
+        var SIZE = 'NULL';
+        var PRICE = 0;
+        var TAX = 0;
+        var DEL = 0;
+        var COUNT = 0;
+        function setSize(size){
+            pricelist = {
+                'S':99,
+                'M':199,
+                'L':399
+            };
+            document.getElementById("prize").innerHTML = "Pizza Price: " + pricelist[size];
+            PRICE = pricelist[size];
+            SIZE = size;
+            return;
+        }
+        function calcBill(){
+            let total = 0;
+            COUNT = document.getElementById('pizza-count').value;
+            total = PRICE*COUNT;
+            if(total<200){
+                total+=25;
+            }
+
+            if(COUNT<2){
+                total+=50;
+                DEL = 50;
+            }
+            else{
+                total+=20;
+                DEL = 20;
+            }
+
+            TAX =  parseFloat((0.065*(PRICE*COUNT)).toFixed(2));
+            total = total + TAX;
+            document.getElementById("quantity").innerHTML = "Number of pizza: "+COUNT;
+            document.getElementById("per-prize").innerHTML = "Price per pizza: "+PRICE;
+            document.getElementById("pre-prize").innerHTML = "Price excluding tax amount: "+COUNT*PRICE;
+            document.getElementById("tax-amt").innerHTML = "Tax amount: "+TAX;
+            document.getElementById("del-charge").innerHTML =" Delivery Charges: "+DEL;
+            document.getElementById("total").innerHTML = 'TOTAL AMOUNT: '+total;
+
+        }
+    </script>
+    <br><br><br>
+    <div class="butt">
+    <a href="http://localhost/project/pizza/order.html">Order Again</a>
+    </div>
+    <br><br><br><br>
+
+    <footer style="background-color:#04164a; color:#e8e9ff; text-align:center; padding:15px; margin-bottom:-30px;">
+          <p>Copyright  &copy  2021 <a style="color:#00a8b8; text-decoration:none;" href="http://localhost/project/pizza/indeex.html">PIZZA CORNER</a>. All  rights  reserved.</p>
+    </footer>
+</body>
+</html>
+﻿

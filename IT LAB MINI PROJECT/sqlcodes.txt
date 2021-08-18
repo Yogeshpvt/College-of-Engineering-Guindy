@@ -1,0 +1,8 @@
+CREATE TABLE `studentdb`.`registerdetails` ( `Sname` VARCHAR(50) NOT NULL ,  `Semail` VARCHAR(60) NOT NULL ,  `Sregisterno` VARCHAR(20) NOT NULL ,  `Sprac_sess` INT NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `registerdetails` ADD PRIMARY KEY(`Semail`);
+ALTER TABLE `registerdetails` ADD UNIQUE(`Sregisterno`);
+
+CREATE TABLE `database_yogesh(it 5211)`.`session` ( `Session_id` INT(1) NOT NULL ,  `Session_timings` VARCHAR(30) NOT NULL ,  `Session_day` VARCHAR(30) NOT NULL ,  `Session_slot_count` INT(3) NOT NULL ,    PRIMARY KEY  (`Session_id`)) ENGINE = InnoDB;
+INSERT INTO `session` VALUES(1,'09:00 – 11:00 ','Tuesday',8)
+INSERT INTO `session` VALUES(2,'14:00 – 16:00','Wednesday',6)
+INSERT INTO `session` VALUES(3,'09:00 – 10:00 ','Tuesday',6)
